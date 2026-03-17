@@ -3,15 +3,30 @@ Math Concepts for Developers – Final Exam Project
 
 ## Overview
 
-This project explores classical sorting algorithms through both **mathematical analysis** and **Python implementations**.
+This project explores several classical sorting algorithms through both **mathematical analysis** and **Python implementations**.
 
-Sorting algorithms are fundamental to computer science. They provide a good framework for understanding:
+Sorting algorithms are a fundamental topic in computer science and provide a strong foundation for understanding:
 
 - algorithmic complexity
-- mathematical analysis of runtime
-- trade-offs between algorithm design approaches
+- asymptotic analysis
+- performance trade-offs between algorithmic approaches
 
-The project combines theoretical explanations, mathematical formulas, and visual examples in Python.
+The project combines theoretical explanations, mathematical formulas, and empirical experiments implemented in Python using Jupyter Notebook.
+
+## How to run
+
+### 1. Install dependencies
+```
+pip install -r requirements.txt
+```
+### 2. Open in jupyter lab or notebook
+```
+jupyter lab
+```
+or
+```
+jupyter notebook
+```
 
 ## Algorithms Covered
 
@@ -31,10 +46,21 @@ The project includes:
 - Empirical performance benchmarking
 - Visualizations of algorithm performance
 
+## Benchmarking
+
+The project includes empirical benchmarking of the implemented algorithms.  
+Random arrays of increasing size are generated and sorted using each algorithm while measuring execution time.
+
+The results are visualized using **Matplotlib**, allowing comparison between:
+
+- quadratic time algorithms $O(n^2)$
+- more efficient algorithms $O(n \log n)$
+
+This demonstrates how theoretical complexity analysis translates into real-world performance.
 
 ## Technologies
 
-- Python
+- Python 3.12+
 - Jupyter Notebook
 - Matplotlib
 
@@ -43,6 +69,7 @@ The project includes:
 ```
 src/ – Python implementations of sorting algorithms
 sorting_algorithms_analysis.ipynb - Main project
+requirements.txt - Required libraries
 ```
 
 
